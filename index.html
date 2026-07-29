@@ -1816,8 +1816,8 @@
 
   function showVrPop() {
     var msg = state.keepN
-      ? 'You can reduce metric variance also by treating your primary metric through \u2014 <strong>CUPED</strong> (use a correlated pre-experiment covariate) or by capping outliers.' +
-        '<br><br><strong>The effect: Without adding a new user</strong> you reliably detect a real effect. And your experiment length doesn\u2019t change. Saves time and costs, don\u2019t they?'
+      ? 'You can reduce metric variance also by treating your primary metric \u2014 through <strong>CUPED</strong> (use a correlated pre-experiment covariate) or by capping outliers.' +
+        '<br><br><strong>The effect: Without adding a single new user</strong> you reliably detect a smaller, real effect \u2014 at the same experiment length. More sensitivity for the same run, isn\u2019t it?'
       : 'If your metric variance is reduced, you need fewer samples to achieve the same results \u2014 saving costs and time, eh!';
     $('vrPopTextM').innerHTML = msg;
     $('vrPopM').classList.add('show');   // stays until dismissed
